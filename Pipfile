@@ -9,6 +9,7 @@ django-cors-headers = "*"
 djangorestframework = "*"
 black = "*"
 colorama = "*"
+django-environ = "*"
 
 [dev-packages]
 
