@@ -2,3 +2,25 @@
 //
 // The variables you want to modify
 // $font-size-root: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+* {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+a {
+    &:visited {
+        color: #000;
+        text-decoration: none !important;
+    }
+
+    &:link {
+        color: #000;
+        text-decoration: none !important;
+    }
+
+    &:hover {
+        color: #000;
+        text-decoration: none !important;
+    }
+}
