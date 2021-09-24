@@ -2,15 +2,16 @@ from rest_framework_jwt.views import obtain_jwt_token, refresh_jwt_token, verify
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 
-# from .views import 
+from .views import UserView
+
 router = DefaultRouter()
-# router.register(r'^jwt/', obtain_jwt_token)
+# router.register(r'jwt/user', obtain_jwt_token)
 # router.register(r'^jwt/refresh/', refresh_jwt_token)
 # router.register(r'^jwt/verify/', verify_jwt_token)
 
 urlpatterns = [
-    path("", include(router.urls)),
     path('jwt/', obtain_jwt_token),
     path('jwt/refresh/', refresh_jwt_token),
     path('jwt/verify/', verify_jwt_token),
+    path('jwt/user/', UserView.as_view()),
 ]
